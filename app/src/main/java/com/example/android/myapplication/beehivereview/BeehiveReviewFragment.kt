@@ -102,7 +102,7 @@ class BeehiveReviewFragment: Fragment() {
         beehiveReviewViewModel.editBeequeenCondition.observe(this, Observer {
             if(it==true){
                 var popupmenu: PopupMenu = PopupMenu(application,binding.queenbeeConditionEdit)
-                popupmenu.menuInflater.inflate(R.menu.popup_menu_button_quality,popupmenu.menu)
+                popupmenu.menuInflater.inflate(R.menu.popup_menu_queenbee_quality,popupmenu.menu)
                 popupmenu.show()
                 popupmenu.setOnMenuItemClickListener(PopupMenu.OnMenuItemClickListener { item ->
                     when(item.itemId) {
@@ -122,7 +122,7 @@ class BeehiveReviewFragment: Fragment() {
        beehiveReviewViewModel.editBeehivePopulation.observe(this, Observer {
             if(it==true){
                 var popupmenu: PopupMenu = PopupMenu(application,binding.hivePopulationEdit)
-                popupmenu.menuInflater.inflate(R.menu.popup_menu_button_quality,popupmenu.menu)
+                popupmenu.menuInflater.inflate(R.menu.popup_menu_population_quality,popupmenu.menu)
                 popupmenu.show()
                 popupmenu.setOnMenuItemClickListener(PopupMenu.OnMenuItemClickListener { item ->
                     when(item.itemId) {
