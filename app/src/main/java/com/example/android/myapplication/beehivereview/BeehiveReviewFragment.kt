@@ -36,7 +36,7 @@ class BeehiveReviewFragment: Fragment() {
 
         binding.setLifecycleOwner(this)
 
-        beehiveReviewViewModel.navigateToDetailFragment.observe(this, Observer {
+        beehiveReviewViewModel.navigateToPreviousFragment.observe(this, Observer {
             if (it!=null){
                 if(binding.broodframeNumberEdit.hint.toString() != "Edit" && binding.honeyFrameNumberEdit.hint.toString() != "Edit"
                     || binding.broodframeNumberEdit.text.toString() != "" && binding.honeyFrameNumberEdit.text.toString() != ""){
@@ -70,7 +70,7 @@ class BeehiveReviewFragment: Fragment() {
                     if(queenbeeYear>(SimpleDateFormat("yyyy").format(Date()).toString().toInt()-6)
                         && queenbeeYear<=SimpleDateFormat("yyyy").format(Date()).toString().toInt()) {
                             beehiveReviewViewModel.doneReview(
-                                SimpleDateFormat("yyyy-MM-DD").format(
+                                SimpleDateFormat("EEEE yyyy-MMM-dd").format(
                                     Date()
                                 ).toString(), bfn, hfn, noszema, ascosphaeraApis, queenbeeYear
                             )
@@ -88,10 +88,18 @@ class BeehiveReviewFragment: Fragment() {
                             this.findNavController().navigate(BeehiveReviewFragmentDirections.actionBeehiveReviewFragmentToBroodframeBalancing(
                                 arguments.beegroupKey))
                         }
+                        if(it==3){
+                            this.findNavController().navigate(BeehiveReviewFragmentDirections.actionBeehiveReviewFragmentToHoneyframeBalancing(
+                                arguments.beegroupKey))
+                        }
+                        if (it==4){
+                            this.findNavController().navigate(BeehiveReviewFragmentDirections.actionBeehiveReviewFragmentToSickBees(
+                                arguments.beegroupKey))
+                        }
                             beehiveReviewViewModel.doneNavigating()
                         }
                     else{
-                        Toast.makeText(application, "The Queenbee year isn't correct!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(application, resources.getString(R.string.queenbee_warning), Toast.LENGTH_SHORT).show()
                     }
                 }else{
                     Toast.makeText(application, "Please fill all field!",Toast.LENGTH_SHORT).show()
@@ -118,7 +126,6 @@ class BeehiveReviewFragment: Fragment() {
                 beehiveReviewViewModel.doneEditBeequennCondition()
             }
         })
-
        beehiveReviewViewModel.editBeehivePopulation.observe(this, Observer {
             if(it==true){
                 var popupmenu: PopupMenu = PopupMenu(application,binding.hivePopulationEdit)

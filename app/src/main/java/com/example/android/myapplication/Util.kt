@@ -25,7 +25,7 @@ fun convertNumericQuantityToString(quantity: Int, resources: Resources): String{
     return quantityString
 }
 
-fun convertNumericDiseasesToString(diseases: Int, resources: Resources): String{
+fun convertNumericSickToString(diseases: Int, resources: Resources): String{
     var diseasesString = ""
     when (diseases){
         1 -> diseasesString = resources.getString(R.string.nosema)

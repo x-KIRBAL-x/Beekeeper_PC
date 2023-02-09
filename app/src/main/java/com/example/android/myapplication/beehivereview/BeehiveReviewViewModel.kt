@@ -24,14 +24,14 @@ class BeehiveReviewViewModel(
 
         fun getBeehive() = beehive
 
-        private val _navigateToDetailFragment = MutableLiveData<Int?>()
+        private val _navigateToPreviousFragment = MutableLiveData<Int?>()
         private val _editBeequeenCondition = MutableLiveData<Boolean?>()
         private val _editBeehivePopulation = MutableLiveData<Boolean?>()
         private val _editBroodframeQuantity = MutableLiveData<Boolean?>()
         private val _editHoneyframeQuantity = MutableLiveData<Boolean?>()
 
-    val navigateToDetailFragment: LiveData<Int?>
-        get() = _navigateToDetailFragment
+    val navigateToPreviousFragment: LiveData<Int?>
+        get() = _navigateToPreviousFragment
 
     val editBeequeenCondition: LiveData<Boolean?>
         get() = _editBeequeenCondition
@@ -123,9 +123,9 @@ class BeehiveReviewViewModel(
     }
 
     fun clickOnDoneButton(){
-        _navigateToDetailFragment.value=navi.toInt()
+        _navigateToPreviousFragment.value=navi.toInt()
     }
     fun doneNavigating(){
-        _navigateToDetailFragment.value=null
+        _navigateToPreviousFragment.value=null
     }
 }

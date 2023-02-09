@@ -16,6 +16,6 @@ fun TextView.setQueenBeeAge(item: Beehive?) {
 @BindingAdapter("LastReview")
 fun TextView.setLastReview(item: Beehive?){
     item?.let {
-        text = "Last review: " + item.lastManagement
+        text = "Last review: \n" + item.lastManagement
     }
 }

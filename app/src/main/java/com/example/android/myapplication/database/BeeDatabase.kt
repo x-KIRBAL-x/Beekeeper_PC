@@ -24,6 +24,7 @@ abstract class BeeDatabase: RoomDatabase() {
                 if(instance == null){
                     instance = Room.databaseBuilder(context.applicationContext,
                         BeeDatabase::class.java,"bee_history_database")
+                        .allowMainThreadQueries()
                         .fallbackToDestructiveMigration()
                         .build()
                     INSTANCE = instance

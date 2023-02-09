@@ -118,7 +118,17 @@
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_beeManagementFragment_to_beeStatistics">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_beeManagementFragment_to_broodframeBalancing">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_beeManagementFragment_to_honeyframeBalancing">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -129,6 +139,32 @@
                               </value>
                             </entry>
                             <entry key="action_beeManagementFragment_to_selectGroup">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_beeManagementFragment_to_sickBees">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="beeStatistics">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_beeStatistics_to_beeManagementFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -216,7 +252,17 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_beehiveReviewFragment_to_honeyframeBalancing">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_beehiveReviewFragment_to_queenbeeManagement">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_beehiveReviewFragment_to_sickBees">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -314,6 +360,32 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="honeyframeBalancing">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="746" />
+                            <option name="y" value="-644" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_honeyframeBalancing_to_beeManagementFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_honeyframeBalancing_to_beehiveReviewFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="queenbeeManagement">
                     <value>
                       <LayoutPositions>
@@ -357,6 +429,32 @@
                               </value>
                             </entry>
                             <entry key="action_selectGroup_to_beeManagementFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="sickBees">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-84" />
+                            <option name="y" value="-533" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_sickBees_to_beeManagementFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_sickBees_to_beehiveReviewFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
